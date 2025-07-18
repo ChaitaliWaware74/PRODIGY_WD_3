@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Welcome screen -->
+  <div id="welcome-screen" class="centered">
+    <h1>Welcome to Tic-Tac-Toe!</h1>
+    <p id="quote">"Let's try and see who wins!"</p>
+    <button onclick="startGame('pvp')">Player to Players</button>
+    <button onclick="startGame('ai')">You vs AI</button>
+  </div>
+
+  <!-- Game section -->
+  <div id="game-section" style="display: none;">
+    <div class="banner">
+      <div class="circle">
+        <h1>Tic-Tac-Toe<br>Web App</h1>
+      </div>
+      <div class="description">
+        <p id="mode-info"></p>
+      </div>
+    </div>
+
+    <div class="game-container">
+      <h2 id="status">Player X's turn</h2>
+      <div class="board" id="board">
+        <div class="cell" data-index="0"></div>
+        <div class="cell" data-index="1"></div>
+        <div class="cell" data-index="2"></div>
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4"></div>
+        <div class="cell" data-index="5"></div>
+        <div class="cell" data-index="6"></div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
+      </div>
+      <button id="restart">Restart Game</button>
+      <!-- Add this below the restart button -->
+      <button id="back-home">Back to Home</button>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
